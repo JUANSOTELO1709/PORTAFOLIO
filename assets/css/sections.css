@@ -1,0 +1,17 @@
+.about_me, 
+.skills,
+.studies,
+.projects,
+.contact{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills{
+    max-width: none;
+}

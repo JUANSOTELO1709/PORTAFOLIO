@@ -21,7 +21,7 @@ body{
     font-family: var(--roboto);
     color: var(--dark);
     font-weight: 400;
-    background: url(/assets/images/fondo.jpg) repeat;
+    background: url(/assets/images/fondoss.jpg) repeat;
     background-color: var(--white);
     transition: all 0.3s ease;
 }

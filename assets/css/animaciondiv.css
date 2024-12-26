@@ -1,0 +1,26 @@
+/* Animaciones personalizadas */
+.animate__animated {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate__fadeInLeft.scroll-in {
+    opacity: 1;
+    transform: translateX(0);
+    animation-delay: 2s;
+}
+
+.animate__fadeInRight.scroll-in {
+    opacity: 1;
+    transform: translateX(0);
+    animation-delay: 2s;
+}
+
+/* Posicionamiento inicial de las animaciones */
+.principal_one_titles, .principal_one_buttons {
+    transform: translateX(-50px);
+}
+
+.image_hero {
+    transform: translateX(50px);
+}

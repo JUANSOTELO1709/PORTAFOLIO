@@ -48,6 +48,7 @@
 }
 
 
+
 .skills_container {
     display: flex;
     flex-wrap: wrap;
@@ -69,3 +70,32 @@
     opacity: 1;
     transform: scale(1);
 }
+
+.studies_title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.studies_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.card.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+

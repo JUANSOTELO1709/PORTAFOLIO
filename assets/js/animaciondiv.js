@@ -1,26 +1,24 @@
-
-
 document.addEventListener("DOMContentLoaded", function() {
-    const observer = new IntersectionObserver((entries) => {
+    // Intersection Observer para la sección About Me
+    const aboutMeObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("in-view");
             }
         });
-    }, { threshold: 0.2 }); // Puedes ajustar el umbral según sea necesario
+    }, { threshold: 0.1 });
 
-    const elements = document.querySelectorAll(".about_me-container");
-    elements.forEach(element => {
-        observer.observe(element);
+    const aboutMeElements = document.querySelectorAll(".about_me-container");
+    aboutMeElements.forEach(element => {
+        aboutMeObserver.observe(element);
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
+    // Scroll Animations
     window.addEventListener('scroll', function() {
-        const elements = document.querySelectorAll('.animate__animated');
+        const animatedElements = document.querySelectorAll('.animate__animated');
         const viewportHeight = window.innerHeight;
 
-        elements.forEach(function(element) {
+        animatedElements.forEach(function(element) {
             const elementTop = element.getBoundingClientRect().top;
 
             if (elementTop < viewportHeight - 100) {
@@ -28,24 +26,42 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-    const logos = document.querySelectorAll(".skill-logo");
+    // Intersection Observer para las logos de habilidades
+    const skillLogos = document.querySelectorAll(".skill-logo");
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const skillLogoObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 const logo = entry.target;
                 setTimeout(() => {
                     logo.classList.add("in-view");
-                }, Array.from(logos).indexOf(logo) * 200); // Ajusta el intervalo de tiempo entre cada animación
-                observer.unobserve(logo); // Dejar de observar una vez que la animación se haya activado
+                }, Array.from(skillLogos).indexOf(logo) * 200);
+                observer.unobserve(logo);
             }
         });
     }, { threshold: 0.1 });
 
-    logos.forEach((logo) => {
-        observer.observe(logo);
+    skillLogos.forEach((logo) => {
+        skillLogoObserver.observe(logo);
+    });
+
+    // Intersection Observer para las tarjetas de formación
+    const cards = document.querySelectorAll(".card");
+
+    const cardObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const card = entry.target;
+                setTimeout(() => {
+                    card.classList.add("in-view");
+                }, Array.from(cards).indexOf(card) * 200);
+                observer.unobserve(card);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    cards.forEach((card) => {
+        cardObserver.observe(card);
     });
 });

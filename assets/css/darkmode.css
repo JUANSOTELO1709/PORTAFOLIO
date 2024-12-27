@@ -8,7 +8,6 @@
 }
 
 body.dark{
-    background: url(/assets/images/fondo_osc.jpg) no-repeat;
     background-color: var(--dark);
 }
 

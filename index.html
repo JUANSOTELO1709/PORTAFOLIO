@@ -48,10 +48,13 @@
     
     <body>
         <main>
-            <header id="header" >
+            <header id="header">
                 <div class="container_header">
-                    <a href="#principal" ><img class="logo_header" src="assets/images/logo-inicial-portafolio1.png" alt="Logo"></a>
-            
+                    <div class="header_left">
+                        <span class="header_title">Mi Portafolio</span>
+                        <a href="#principal"></a>
+                    </div>
+                    
                     <nav class="items_container">
                         <a class="menuItems" href="#about_me">SOBRE MI</a>
                         <a class="menuItems" href="#skills">HABILIDADES</a>
@@ -59,12 +62,13 @@
                         <a class="menuItems" href="#projects">PROYECTOS</a>
                         <a class="menuItems" href="#contact">CONTACTO</a> 
                     </nav>
-
+            
                     <div class="dark_mode_button">
                         <i class="fa-solid fa-moon"></i>
                         <i class="fa-solid fa-sun"></i>
                     </div>
-                      <!---- Burguer Menu ---->
+                    
+                    <!---- Burger Menu ---->
                     <div class="nav_burguer">
                         <div class="nav_burguer-line-1"></div>
                         <div class="nav_burguer-line-2"></div>
@@ -72,11 +76,12 @@
                     </div>
                 </div>
             </header>
+            
              <!----             <div id="loading"> <img src="batery.webp" alt="Carga de Batería"></div>
  ---->
 
             
-            <section class="principal" id="principal">
+            <section class="principal" id="principal">             <!---- Titulo animacion ---->
                 <div class="principal_one">
                     <div class="principal_one_titles animate__animated animate__fadeInLeft">
                         <h3 class="title_three">¡Hola!</h3>
@@ -95,7 +100,7 @@
             </section>
 
             
-            <section class="about_me" id="about_me">
+            <section class="about_me" id="about_me">  <!---- Sobre mi---->
                 <div class="about_me-container">
                     <div class="about_me-one">
                         <img class="about_me-img" src="assets/images/IMG-INFO.png" alt="Imagen about me">
@@ -111,14 +116,10 @@
                     </div>
                 </div>
             </section>
-            
-        
+                 
 
-
-
-
-            <section class="skills" id="skills">
-                <h2 class="skills_title">Habilidades</h2>
+            <section class="skills" id="skills">             <!----  Habilidades---->
+                <h2 class="skills_title" id="skills-title">Habilidades</h2>
                 <ul class="skills_container">
                     <li><img src="assets/images/logo-html.png" class="skill-logo"></li>
                     <li><img src="assets/images/logo-css.png" class="skill-logo"></li>
@@ -131,8 +132,9 @@
                     <li><img src="assets/images/PYTHON1.png" class="skill-logo"></li>
                 </ul>
             </section>
+          
             
-            <section class="studies" id="studies">
+            <section class="studies" id="studies">       <!---- Formacion  ---->
 
                 <h1 class="studies_title">Formación</h1>
 
@@ -146,8 +148,6 @@
                         </div>
                     </div>
 
-
-                    
                     <div class="card">
                         <img src="assets/images/platzi.jpg" alt=" Logo Utn">
                         <div class="cards_text">
@@ -156,9 +156,7 @@
                             protocolos de comunicacion</p>
                         </div>
                     </div>
-
-
-                    <div class="card">
+                        <div class="card">
                         <img src="assets/images/platzi.jpg" alt=" Logo Utn">
                         <div class="cards_text">
                             <h1>Platzi</h1>
@@ -166,7 +164,6 @@
                             protocolos de comunicacion</p>
                         </div>
                     </div>
-
                     <div class="card"> <img src="assets/images/Universidad.jpg" alt "logo Uni"> 
                     <div class="cards_text">
                         <center> <h1>E.T.I.T.C</h1>
@@ -179,18 +176,27 @@
                             <p>Tecnología en Automatizacion industrial</p>
                             </div>
                         </div>
-                
-
                 </div>
-        
             </section>
         
-            <section class="projects" id="projects">
+            <section class="projects" id="projects">   <!---- Proyectos ---->
 
-                <h1 class="projects_title">Proyectos</h1>
+                <h1 class="projects_title">Proyectos</h1>   
 
                 <div class="container_projects">
 
+
+
+
+
+
+
+
+
+
+
+
+                    
                     <div class="project_card">
                         <div class="container_title">
                             <h1>Juego del Ahorcado</h1>
@@ -240,6 +246,17 @@
 
                     </div>
 
+
+
+
+
+
+
+
+
+
+
+                    
                     <div class="project_card">
                         <div class="container_title">
                             <h1>Portafolio</h1>

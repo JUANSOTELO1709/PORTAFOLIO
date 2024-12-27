@@ -1,0 +1,14 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "¡Bienvenido a mi portafolio! 🌟\r Aquí encontrarás una recopilación de mis proyectos, habilidades y logros en las áreas que me apasionan: diseño, programación, electrónica y creación de contenido interactivo.\r https://juansotelo1709.github.io/PORTAFOLIO/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Sotelo",
+  "license": "ISC",
+  "dependencies": {
+    "motion": "^11.15.0"
+  }
+}

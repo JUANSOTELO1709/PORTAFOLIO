@@ -24,3 +24,25 @@
 .image_hero {
     transform: translateX(50px);
 }
+
+
+
+.about_me-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about_me-container.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.about_me-img {
+    transition: transform 0.5s ease-out;
+}
+
+.about_me-img.zoomed {
+    transform: scale(1.1);
+}

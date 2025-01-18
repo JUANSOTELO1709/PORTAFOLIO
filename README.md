@@ -36,8 +36,9 @@ Creación de soluciones personalizadas y artísticas para clientes, combinando d
 ### 5. **Conversor de monedas**  
 Creación aplicativo en Java, para realizar un conversor de monedas locales.
 Ej: (USD a COP, USD a YEN, UST a libra) 
-
-
+### 6. **Conversor de monedas API** 
+Creación aplicativo en Java, para realizar un conversor de monedas locales.
+Ej: (USD a COP, USD a YEN, UST a libra) 
 ## 📞 Contacto  
 Si deseas colaborar o necesitas más información, no dudes en contactarme:  
 - **Telefono**: +57 3026622715

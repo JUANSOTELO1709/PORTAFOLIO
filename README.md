@@ -39,6 +39,10 @@ Ej: (USD a COP, USD a YEN, UST a libra)
 ### 6. **Conversor de monedas API** 
 Creación aplicativo en Java, para realizar un conversor de monedas locales.
 Ej: (USD a COP, USD a YEN, UST a libra) 
+### 7. **TASKMANAGER**
+
+
+
 ## 📞 Contacto  
 Si deseas colaborar o necesitas más información, no dudes en contactarme:  
 - **Telefono**: +57 3026622715

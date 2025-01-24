@@ -1,13 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const toggleLangAboutMeButton = document.getElementById('toggle-lang-about_me');
+    const toggleLangButton = document.getElementById('toggle-lang');
+    const spanishHeader = document.getElementById('spanish-header');
+    const englishHeader = document.getElementById('english-header');
     const spanishAboutMe = document.getElementById('spanish-about_me');
     const englishAboutMe = document.getElementById('english-about_me');
 
-    toggleLangAboutMeButton.addEventListener('click', () => {
-        if (spanishAboutMe.style.display === 'none') {
+    toggleLangButton.addEventListener('click', () => {
+        if (spanishHeader.style.display === 'none') {
+            spanishHeader.style.display = 'block';
+            englishHeader.style.display = 'none';
             spanishAboutMe.style.display = 'block';
             englishAboutMe.style.display = 'none';
         } else {
+            spanishHeader.style.display = 'none';
+            englishHeader.style.display = 'block';
             spanishAboutMe.style.display = 'none';
             englishAboutMe.style.display = 'block';
         }

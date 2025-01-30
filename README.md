@@ -1,6 +1,8 @@
 # Portafolio Personal
 
 ¡Bienvenido a mi portafolio! 🌟
+
+
 Aquí encontrarás una recopilación de mis proyectos, habilidades y logros en las áreas que me apasionan: diseño, programación, electrónica y creación de contenido interactivo.
 https://juansotelo1709.github.io/PORTAFOLIO/
 

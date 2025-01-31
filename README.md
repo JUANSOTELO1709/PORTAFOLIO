@@ -10,7 +10,7 @@ https://juansotelo1709.github.io/PORTAFOLIO/
 
 
 ## 🚀 Sobre Mí
-Soy **Juan**, Tecnico profesional en electronica y estudiante de ingenieria mecatronica, desarrollador y diseñador creativo con experiencia en:  
+Soy **Juan Sotelo**, Tecnico profesional en electronica y estudiante de ingenieria mecatronica, desarrollador y diseñador creativo con experiencia en:  
 
 - **Electrónica**: Desarrollo de sistemas embebidos, Arduino, y simulaciones en MATLAB.  
 - **Desarrollo Web**: Creación de sitios interactivos y funcionales, especializados en HTML, CSS y JavaScript.  

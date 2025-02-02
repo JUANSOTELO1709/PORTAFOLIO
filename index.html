@@ -31,7 +31,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    </head>
+    
+
+
+</head>
 
     <!-- Fontawsome -->
 
@@ -64,20 +67,17 @@
                         <a class="menuItems" href="#projects">PROYECTOS</a>
                         <a class="menuItems" href="#contact">CONTACTO</a> 
                     </nav>
-                
+            
+                    <!-- Botón de Cambio de Idioma -->
+                    <button id="toggle-lang-about_me" class="lang_button">Lan</button>
+                    
                     <!-- Botón de Modo Oscuro/Claro -->
                     <div class="dark_mode_button">
                         <i class="fa-solid fa-moon"></i>
                         <i class="fa-solid fa-sun"></i>
                     </div>
-                </div>
-
-        
-                <!-- Menú Burger -->
-
-        
-    <button id="toggle-lang-about_me">Lan</button>
-                    <!---- Burger Menu ---->
+            
+                    <!-- Menú Burger -->
                     <div class="nav_burguer">
                         <div class="nav_burguer-line-1"></div>
                         <div class="nav_burguer-line-2"></div>
@@ -86,32 +86,56 @@
                 </div>
             </header>
             
+            
              <!----             <div id="loading"> <img src="batery.webp" alt="Carga de Batería"></div>
  ---->
 
-            
-            <section class="principal" id="principal">             <!---- Titulo animacion ---->
-                <div class="principal_one">
-                    <div class="principal_one_titles animate__animated animate__fadeInLeft">
-                        <h3 class="title_three">¡Hola!</h3>
-                        <h1 class="title_one"> Soy Juan David Sotelo </h1>
-                        <span class="title_five"></span>
-                    </div>
-                    <div class="principal_one_buttons animate__animated animate__fadeInLeft">
-                        <a href="#contact" class="contact_me_button">Contactame</a>
-                        <a class="download_button">Descargar CV</a>
-                    </div>
-                </div>
-            
-                <div class="principal_two">
-                    <img class="image_hero animate__animated animate__fadeInRight" src="assets/images/Imagen-hero.png" alt="imagen principal">
-                </div>
-            </section>
+<section class="principal" id="principal">
+    <!-- Contenido en Español -->
+    <div id="spanish-principal">
+        <div class="principal_one">
+            <div class="principal_one_titles animate__animated animate__fadeInLeft">
+                <h3 class="title_three">¡Hola!</h3>
+                <h1 class="title_one"> Soy Juan David Sotelo </h1>
+                <span class="title_five"></span>
+            </div>
+            <div class="principal_one_buttons animate__animated animate__fadeInLeft">
+                <a href="#contact" class="contact_me_button">Contactame</a>
+                <a class="download_button">Descargar CV</a>
+            </div>
+        </div>
+    
+
+    </div>
+    <div class="principal_two">
+        <img class="image_hero animate__animated animate__fadeInRight" src="assets/images/Imagen-hero.png" alt="imagen principal">
+    </div>
+    <!-- Contenido en Inglés -->
+    <div id="english-principal" class="english">
+        <div class="principal_one">
+            <div class="principal_one_titles animate__animated animate__fadeInLeft">
+                <h3 class="title_three">Hello!</h3>
+                <h1 class="title_one"> I am Juan David Sotelo </h1>
+                <span class="title_five"></span>
+            </div>
+            <div class="principal_one_buttons animate__animated animate__fadeInLeft">
+                <a href="#contact" class="contact_me_button">Contact Me</a>
+                <a class="download_button">Download CV</a>
+            </div>
+        </div>
+    
+
+    </div>
+    
+</section>
+
 
             
-    <!-- Spanish Content -->
     <section class="about_me" id="about_me">    <!-- SOBRE MI -->
-        <div id="spanish-about_me">
+        
+        
+        <div id="spanish-about_me">     <!-- Spanish Content -->
+
             <div class="about_me-container">
                 <div class="about_me-one">
                     <img class="about_me-img" src="assets/images/IMG-INFO.png" alt="Imagen about me">
@@ -132,8 +156,8 @@
             </div>
         </div>
 
-        <!-- English Content -->
-        <div id="english-about_me" style="display: none;">
+        <div id="english-about_me" style="display: none;">         <!-- English Content ABOUT ME -->
+
             <div class="about_me-container">
                 <div class="about_me-one">
                     <img class="about_me-img" src="assets/images/IMG-INFO.png" alt="About me image">
@@ -155,68 +179,122 @@
 </section>
 
 
+<section class="skills" id="skills">      <!-- HABILIDADES -->
 
-            <section class="skills" id="skills">             <!----  Habilidades---->
-                <h2 class="skills_title" id="skills-title">Habilidades</h2>
-                <ul class="skills_container">
-                    <li><img src="assets/images/logo-html.png" class="skill-logo"></li>
-                    <li><img src="assets/images/logo-css.png" class="skill-logo"></li>
-                    <li><img src="assets/images/logo-js.png" class="skill-logo"></li>
-                    <li><img src="assets/images/logo-java.png" class="skill-logo"></li>
-                    <li><img src="assets/images/logo-git.png" class="skill-logo"></li>
-                    <li><img src="assets/images/logo-github.png" class="skill-logo"></li>
-                    <li><img src="assets/images/C++.png" class="skill-logo"></li>
-                    <li><img src="assets/images/C1.png" class="skill-logo"></li>
-                    <li><img src="assets/images/PYTHON1.png" class="skill-logo"></li>
-                    <li><img src="assets/images/sql.png" class="skill-logo">  </li>
-                </ul>
-            </section>
-          
-            
-            <section class="studies" id="studies">       <!---- Formacion  ---->
 
-                <h1 class="studies_title">Formación</h1>
+    <div id="spanish-skills">   <!-- Contenido en español Habilidades -->
+        <h2 class="skills_title">Habilidades</h2>     
+        <ul class="skills_container">
+            <li><img src="assets/images/logo-html.png" class="skill-logo"></li>
+            <li><img src="assets/images/logo-css.png" class="skill-logo"></li>
+            <li><img src="assets/images/logo-js.png" class="skill-logo"></li>
+            <li><img src="assets/images/logo-java.png" class="skill-logo"></li>
+            <li><img src="assets/images/logo-git.png" class="skill-logo"></li>
+            <li><img src="assets/images/logo-github.png" class="skill-logo"></li>
+            <li><img src="assets/images/C++.png" class="skill-logo"></li>
+            <li><img src="assets/images/C1.png" class="skill-logo"></li>
+            <li><img src="assets/images/PYTHON1.png" class="skill-logo"></li>
+            <li><img src="assets/images/sql.png" class="skill-logo"></li>
+        </ul>
+    </div>
+    <div id="english-skills" class="english">    <!-- English Content Abour Skills -->
 
-                <div class="studies_cards">
+        <h2 class="skills_title">Skills</h2>
+        <ul class="skills_container">
+            <li><img src="assets/images/logo-html.png" class="skill-logo"></li>
+            <li><img src="assets/images/logo-css.png" class="skill-logo"></li>
+            <li><img src="assets/images/logo-js.png" class="skill-logo"></li>
+            <li><img src="assets/images/logo-java.png" class="skill-logo"></li>
+            <li><img src="assets/images/logo-git.png" class="skill-logo"></li>
+            <li><img src="assets/images/logo-github.png" class="skill-logo"></li>
+            <li><img src="assets/images/C++.png" class="skill-logo"></li>
+            <li><img src="assets/images/C1.png" class="skill-logo"></li>
+            <li><img src="assets/images/PYTHON1.png" class="skill-logo"></li>
+            <li><img src="assets/images/sql.png" class="skill-logo"></li>
+        </ul>
+    </div>
 
-                    <div class="card">
-                        <img src="assets/images/logo-study-oracle-one.png" alt="Logo Alura">
-                        <div class="cards_text">
-                            <h1>Oracle Next Education</h1>
-                            <p>Front-end, Back-end y Soft Skills</p>
-                        </div>
+</section>
+                  
+
+<section class="studies" id="studies">       <!-- FORMACION -->
+
+    <div id="spanish-studies">          <!-- Contenido en Español -->
+
+        <h1 class="studies_title">Formación</h1>
+        <div class="studies_cards">
+            <div class="card">
+                <img src="assets/images/logo-study-oracle-one.png" alt="Logo Alura">
+                <div class="cards_text">
+                    <h1>Oracle Next Education</h1>
+                    <p>Front-end, Back-end y Soft Skills</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/platzi.jpg" alt="Logo Platzi">
+                <div class="cards_text">
+                    <h1>Platzi</h1>
+                    <p>CURSO I.O.T<br>protocolos de comunicación</p>
+                </div>
+            </div>
+
+            <div class="card"> <img src="assets/images/Universidad.jpg" alt "logo Uni"> 
+                <div class="cards_text">
+                    <center> <h1>E.T.I.T.C</h1>
+                    <p>Tecnico profesional en electrónica </p>
                     </div>
+                </div>
 
-                    <div class="card">
-                        <img src="assets/images/platzi.jpg" alt=" Logo Utn">
-                        <div class="cards_text">
-                            <h1>Platzi</h1>
-                            <p>Desarrollo software<BR>
-                            protocolos de comunicacion</p>
-                        </div>
+            <div class="card"> <img src="assets/images/Universidad.jpg" alt "logo Uni"> 
+                <div class="cards_text">
+                    <center> <h1>E.T.I.T.C</h1>
+                    <p>Tecnología en Automatizacion </p>
                     </div>
-                        <div class="card">
-                        <img src="assets/images/platzi.jpg" alt=" Logo Utn">
-                        <div class="cards_text">
-                            <h1>Platzi</h1>
-                            <p>CURSO I.O.T<BR>
-                            protocolos de comunicacion</p>
-                        </div>
+             </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="english-studies" class="english">     <!-- English studies -->
+
+        <h1 class="studies_title">Studies</h1>
+        <div class="studies_cards">
+            <div class="card">
+                <img src="assets/images/logo-study-oracle-one.png" alt="Logo Alura">
+                <div class="cards_text">
+                    <h1>Oracle Next Education</h1>
+                    <p>Front-end, Back-end, and Soft Skills</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/platzi.jpg" alt="Logo Platzi">
+                <div class="cards_text">
+                    <h1>Platzi</h1>
+                    <p>I.O.T Course <br>communication protocols</p>
+                </div>
+            </div>
+
+            <div class="card"> <img src="assets/images/Universidad.jpg" alt "logo Uni"> 
+                <div class="cards_text">
+                    <center> <h1>E.T.I.T.C</h1>
+                    <p>Technician professional in Electronics</p>
                     </div>
-                    <div class="card"> <img src="assets/images/Universidad.jpg" alt "logo Uni"> 
+                </div>
+                
+            <div class="card"> 
+                <img src="assets/images/Universidad.jpg" alt "logo Uni"> 
                     <div class="cards_text">
                         <center> <h1>E.T.I.T.C</h1>
-                        <p>Tecnico en electrónica industrial</p>
-                        </div>
+                    <p>Technology in Automation</p>
                     </div>
-                    <div class="card"> <img src="assets/images/Universidad.jpg" alt "logo Uni"> 
-                        <div class="cards_text">
-                            <center> <h1>E.T.I.T.C</h1>
-                            <p>Tecnología en Automatizacion industrial</p>
-                            </div>
-                        </div>
-                </div>
-            </section>
+            </div>
+        </div>  
+        </div>
+    </div>
+
+</section>
         
             <section class="projects" id="projects">   <!---- Proyectos ---->
 
@@ -224,18 +302,6 @@
 
                 <div class="container_projects">
 
-
-
-
-
-
-
-
-
-
-
-
-                    
                     <div class="project_card">
                         <div class="container_title">
                             <h1>Juego del Ahorcado</h1>

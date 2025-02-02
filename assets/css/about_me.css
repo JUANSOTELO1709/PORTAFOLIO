@@ -1,28 +1,36 @@
-.about_me-container{
+/* Clases para controlar la visibilidad */
+.english { 
+    display: none; 
+}
+.spanish { 
+    display: block; 
+}
+
+.about_me-container {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-between;
 }
 
-.about_me-one{
+.about_me-one {
     width: 40%;
     display: flex;
     align-items: center;
 }
 
-.about_me-img{
+.about_me-img {
     width: 400px;
 }
 
-.about_me-two{
+.about_me-two {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.about_me-title{
+.about_me-title {
     font-family: var(--rubik);
     font-size: 40px;
     color: var(--black);
@@ -30,7 +38,7 @@
     margin-bottom: 30px;
 }
 
-.about_me-paragraph{
+.about_me-paragraph {
     line-height: 25px;
     text-align: left;
 }

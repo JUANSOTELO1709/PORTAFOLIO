@@ -51,3 +51,10 @@ body{
 }
 
 
+/* Clases para controlar la visibilidad */
+.english { 
+    display: none; 
+}
+.spanish { 
+    display: block; 
+}

@@ -1,6 +1,8 @@
-# Portafolio Personal
+# Mi Portafolio Personal
 
 ¡Bienvenido a mi portafolio! 🌟
+
+
 Aquí encontrarás una recopilación de mis proyectos, habilidades y logros en las áreas que me apasionan: diseño, programación, electrónica y creación de contenido interactivo.
 https://juansotelo1709.github.io/PORTAFOLIO/
 
@@ -8,7 +10,7 @@ https://juansotelo1709.github.io/PORTAFOLIO/
 
 
 ## 🚀 Sobre Mí
-Soy **Juan**, Tecnico profesional en electronica y estudiante de ingenieria mecatronica, desarrollador y diseñador creativo con experiencia en:  
+Soy **Juan Sotelo**, Tecnico profesional en electronica y estudiante de ingenieria mecatronica, desarrollador y diseñador creativo con experiencia en:  
 
 - **Electrónica**: Desarrollo de sistemas embebidos, Arduino, y simulaciones en MATLAB.  
 - **Desarrollo Web**: Creación de sitios interactivos y funcionales, especializados en HTML, CSS y JavaScript.  
@@ -30,19 +32,27 @@ Diversos juego creativos para enviar un mensaje especial con efectos visuales y 
 
 ### 3. **Sistema de Comunicación ZigBee**
 Implementación de comunicación segura y estable en largas distancias utilizando un modulo de comunicacion Zigbee (Mejora para CanSat V2)
+link:
 
 ### 4. **Empresa de Impresión 3D: Impresionarte**  
 Creación de soluciones personalizadas y artísticas para clientes, combinando diseño y funcionalidad.  
+link:
+
 ### 5. **Conversor de monedas**  
 Creación aplicativo en Java, para realizar un conversor de monedas locales.
 Ej: (USD a COP, USD a YEN, UST a libra) 
+
+
 ### 6. **Conversor de monedas API** 
 Creación aplicativo en Java, para realizar un conversor de monedas locales.
 Ej: (USD a COP, USD a YEN, UST a libra) 
+
+
 ### 7. **TASKMANAGER**
+link
 
 ### 8. **Impresionarte**
-
+link
 
 
 ## 📞 Contacto  

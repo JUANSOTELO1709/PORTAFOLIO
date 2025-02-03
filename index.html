@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi portfolio</title>
+    <title>My Portfolio</title>
 
     <!-- Styles -->
      <link rel="stylesheet" href="motion.css">
@@ -88,9 +88,12 @@
             
             
              <!----             <div id="loading"> <img src="batery.webp" alt="Carga de Batería"></div>
- ---->
 
-<section class="principal" id="principal">
+                 <div class="principal_two">
+        <img class="image_hero animate__animated animate__fadeInRight" src="assets/images/Imagen-hero.png" alt="imagen principal">
+    </div>
+ ---->
+ <section class="principal" id="principal">
     <!-- Contenido en Español -->
     <div id="spanish-principal">
         <div class="principal_one">
@@ -104,18 +107,17 @@
                 <a class="download_button">Descargar CV</a>
             </div>
         </div>
-    
+        <div class="principal_two">
+            <img class="image_hero animate__animated animate__fadeInRight" src="assets/images/Imagen-hero.png" alt="imagen principal">
+        </div>
+    </div>
 
-    </div>
-    <div class="principal_two">
-        <img class="image_hero animate__animated animate__fadeInRight" src="assets/images/Imagen-hero.png" alt="imagen principal">
-    </div>
     <!-- Contenido en Inglés -->
     <div id="english-principal" class="english">
         <div class="principal_one">
             <div class="principal_one_titles animate__animated animate__fadeInLeft">
                 <h3 class="title_three">Hello!</h3>
-                <h1 class="title_one"> I am Juan David Sotelo </h1>
+                <h1 class="title_one"> I'm Juan David Sotelo </h1>
                 <span class="title_five"></span>
             </div>
             <div class="principal_one_buttons animate__animated animate__fadeInLeft">
@@ -123,10 +125,10 @@
                 <a class="download_button">Download CV</a>
             </div>
         </div>
-    
-
+        <div class="principal_two">
+            <img class="image_hero animate__animated animate__fadeInRight" src="assets/images/Imagen-hero.png" alt="main image">
+        </div>
     </div>
-    
 </section>
 
 
@@ -661,13 +663,24 @@
 
 
         <script>
-var typed = new Typed('.title_five', {
-    strings: ['Ing. Mecatrónico', 'Desarrollador', 'Innovador', 'Diseñador 3D'],
-    typeSpeed: 80,
-    backSpeed: 20,
-    loop: true
-});
-
+            document.addEventListener('DOMContentLoaded', () => {
+                var options = {
+                    strings: ['Mechatronics Engineer', 'Developer', 'Innovator', '3D Designer'],
+                    typeSpeed: 80,
+                    backSpeed: 20,
+                    loop: true
+                };
+            
+                var typedEnglish = new Typed('#english-principal .title_five', options);
+                var typedSpanish = new Typed('#spanish-principal .title_five', {
+                    strings: ['Ing. Mecatrónico', 'Desarrollador', 'Innovador', 'Diseñador 3D'],
+                    typeSpeed: 80,
+                    backSpeed: 20,
+                    loop: true
+                });
+            });
+            </script>
+            
         </script>
 </body>
 

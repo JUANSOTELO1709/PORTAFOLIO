@@ -9,6 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const spanishPrincipal = document.getElementById('spanish-principal');
     const englishPrincipal = document.getElementById('english-principal');
 
+    // Inicialmente mostrar la versión en inglés
+    spanishAboutMe.style.display = 'none';
+    englishAboutMe.style.display = 'block';
+    spanishSkills.style.display = 'none';
+    englishSkills.style.display = 'block';
+    spanishStudies.style.display = 'none';
+    englishStudies.style.display = 'block';
+    spanishPrincipal.style.display = 'none';
+    englishPrincipal.style.display = 'block';
+
     toggleLangButton.addEventListener('click', () => {
         if (spanishAboutMe.style.display === 'none') {
             spanishAboutMe.style.display = 'block';

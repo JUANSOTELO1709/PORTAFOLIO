@@ -1,0 +1,47 @@
+
+.portfolio {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(74, 1, 142, 0.1);
+    border-radius: 10px;
+    text-align: center; /* Centrar contenido */
+}
+#languageSelector {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%; /* Ajustar ancho */
+    max-width: 300px; /* Máximo ancho */
+    background-color: #4f2e62; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+#languageSelector option {
+    background-color: #fff; /* Fondo blanco para las opciones */
+    color: #000; /* Texto negro para las opciones */
+}
+.project {
+    display: none;
+}
+.project.active {
+    display: block;
+}
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+/* Regla @media para dispositivos móviles */
+@media (max-width: 600px) {
+    .portfolio {
+        width: 90%;
+        padding: 15px;
+    }
+    #languageSelector {
+        width: 100%;
+        font-size: 16px;
+    }
+}

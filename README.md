@@ -29,6 +29,8 @@ Soy **Juan Sotelo**, Tecnico profesional en electronica y estudiante de ingenier
 ### 1. **CanSat**  
 Un dispositivo que mediante comunicacion Radio frecuencia (NRF24L101)  envia datos cada segundo sobre temperatura, altura del dispositivo, presion atmosferica en tiempo real. (Este modulo unicamente funciona a un rango de 500 mt libres para comunicacion, sin embargo no es muy estable la comunicacion)
 
+(actualizando a zigbee)
+
 ### 2. **Juegos Interactivos en HTML**
 Diversos juego creativos para enviar un mensaje especial con efectos visuales y animaciones personalizadas. (juego del ahorcado, encriptador de texto)
 
@@ -51,10 +53,10 @@ Ej: (USD a COP, USD a YEN, UST a libra)
 
 
 ### 7. **TASKMANAGER**
-link
+link: 
 
 ### 8. **Impresionarte**
-link
+link:
 
 
 ## 📞 Contacto  

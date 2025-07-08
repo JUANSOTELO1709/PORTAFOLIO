@@ -3,7 +3,7 @@
 ¡Bienvenido a mi portafolio! 🌟
 
 si has de querer realizar el cambio de idioma en la parte superior hay un boton llamado "LAN"
-para cambiar idioma
+para cambiar el idioma
 o bien puede ser cambiar el fondo a "modo oscuro" 
 Aquí encontrarás una recopilación de mis proyectos, habilidades y logros en las áreas que me apasionan: diseño, programación, electrónica y creación de contenido interactivo.
 https://juansotelo1709.github.io/PORTAFOLIO/

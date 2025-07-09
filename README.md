@@ -1,6 +1,6 @@
 # Mi Portafolio
 
-¡Bienvenido a mi portafolio! 🌟
+¡Bienvenidos, mi portafolio! 🌟
 
 si has de querer realizar el cambio de idioma en la parte superior hay un boton llamado "LAN"
 para cambiar el idioma

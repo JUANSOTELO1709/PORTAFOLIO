@@ -1,17 +1,39 @@
+:root {
+  --section-bg: #24123a;
+  --section-accent: #a259e6;
+  --section-light: #fff;
+}
 .about_me, 
 .skills,
 .studies,
 .projects,
-.contact{
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 80px 35px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.contact {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 35px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--section-bg);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(162,89,230,0.12);
+  color: var(--section-light);
+  transition: box-shadow 0.3s;
 }
-
-.skills{
-    max-width: none;
+.about_me:hover,
+.skills:hover,
+.studies:hover,
+.projects:hover,
+.contact:hover {
+  box-shadow: 0 16px 40px rgba(162,89,230,0.22);
+}
+.skills {
+  max-width: none;
+}
+@media (max-width: 700px) {
+  .about_me, .skills, .studies, .projects, .contact {
+    padding: 40px 10px;
+    border-radius: 10px;
+  }
 }

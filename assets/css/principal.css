@@ -1,27 +1,29 @@
-
-
-
-
+:root {
+  --principal-dark: #24123a;
+  --principal-accent: #a259e6;
+  --principal-light: #fff;
+}
 
 .lang_button {
-    padding: 10px 20px;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--light);
-    text-decoration: none;
-    text-align: center;
-    border-radius: 5px;
-    background-color: var(--indigo);
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-left: 20px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--principal-light);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  background-color: var(--principal-accent);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  box-shadow: 0 2px 8px var(--principal-accent);
 }
 
 .lang_button:hover {
-    background-color: var(--dark);
-    color: var(--light);
-
+  background-color: var(--principal-dark);
+  color: var(--principal-light);
+  box-shadow: 0 4px 16px var(--principal-accent);
 }
 
 
@@ -34,33 +36,36 @@
     display: block; 
 }
 
-/* Header */
+/*------------------------- Header--------------------------------------- */
 header {
-    background-image: url(/assets/images/cabez1.jpg);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: absolute;
-    top: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    transition: all 0.3s ease 0s;
-    width: 100%;
-    z-index: 10;
-    background-color: var(--ligth_purple);
-    left: 50%;
-    transform: translateX(-50%);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
+  z-index: 100;
+  background-color: var(--principal-dark);
+  box-shadow: 0 8px 32px rgba(254, 253, 255, 0.28);
+  border-radius: 18px 18px 24px 24px;
+  border: none;
+  padding: 18px 0 18px 0;
+  margin-top: 10px;
+  transition: all 0.3s ease 0s;
 }
 
 header.active {
     background-image: url(/assets/images/cabez1.jpg);
-    position: fixed;
-    top: 0;
-    max-width: 100%;
+    box-shadow: 0 16px 40px rgba(162,89,230,0.22);
+}
+
+.items_container {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .container_header {
@@ -73,7 +78,7 @@ header.active {
 }
 
 .logo_header {
-    width: 200px;
+    width: 500px;
 }
 
 header nav {
@@ -82,26 +87,21 @@ header nav {
 }
 
 .menuItems {
-    text-align: center;
-    font-size: 15px;
-    font-family: var(--rubik);
-    font-weight: 400;
-    text-decoration: none;
-    color: var(--black);
-    margin: 0 10px;
+  color: var(--principal-light);
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 14px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s;
 }
 
-.menuItems::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 3px;
-    background: var(--indigo);
-    transition: width 0.3s;
-}
-  
-.menuItems:hover::after {
-    width: 100%;
+.menuItems:hover {
+  background: var(--principal-accent);
+  color: var(--principal-light);
 }
 
 .nav_burguer {
@@ -151,6 +151,15 @@ header nav {
     transform: scale(1);
 }
 
+.header_title {
+  font-style: italic;
+  font-family: var(--rubik), 'Rubik', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--principal-light);
+  letter-spacing: 1px;
+}
+
 /* Principal */
 .principal {
     height: 100vh;
@@ -176,20 +185,20 @@ header nav {
     font-size: 40px;
     margin-bottom: 10px;
     font-weight: 600;
-    color: var(--black);
+    color: var(--principal-light);
 }
 
 .title_one {
     font-size: 45px;
     margin-bottom: 20px;
     font-weight: 600;
-    color: var(--black);
+    color: var(--principal-light);
 }
 
 .title_five {
     font-size: 31px;
     font-weight: 500;
-    color: var(--purple);
+    color: #DF5CFF;
 }
 
 .typed-cursor {
@@ -233,7 +242,7 @@ header nav {
     color: var(--dark);
     border-radius: 5px;
     border: 2px solid var(--indigo);
-    color: var(--black);
+    color: var(--principal-accent);
     cursor: pointer;
 }
 
@@ -250,4 +259,17 @@ header nav {
 
 .image_hero {
     width: 100%;
+}
+
+@media (max-width: 700px) {
+  .lang_button {
+    font-size: 13px;
+    padding: 7px 12px;
+    margin-left: 8px;
+  }
+  header {
+    height: 50px;
+    border-radius: 0 0 6px 6px;
+    border: none;
+  }
 }

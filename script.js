@@ -9,3 +9,34 @@ document.getElementById('languageSelector').addEventListener('change', function(
         }
     });
 });
+
+// Modal para certificados en estudios
+const certModal = document.getElementById('certModal');
+const certModalImg = document.getElementById('certModalImg');
+const closeCertModal = document.getElementById('closeCertModal');
+
+const certButtons = document.querySelectorAll('.cert_button');
+certButtons.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const certSrc = btn.getAttribute('data-cert');
+    if(certSrc.endsWith('.pdf')) {
+      window.open(certSrc, '_blank');
+      return;
+    }
+    certModalImg.src = certSrc;
+    certModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  });
+});
+closeCertModal.addEventListener('click', function() {
+  certModal.style.display = 'none';
+  certModalImg.src = '';
+  document.body.style.overflow = '';
+});
+certModal.addEventListener('click', function(e) {
+  if (e.target === certModal) {
+    certModal.style.display = 'none';
+    certModalImg.src = '';
+    document.body.style.overflow = '';
+  }
+});

@@ -6,39 +6,87 @@
     display: block; 
 }
 
+:root {
+  --about-dark: #2a1746;
+  --about-accent: #a259e6;
+  --about-light: #fff;
+}
+
 .about_me-container {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--about-dark);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(162,89,230,0.12);
+  color: var(--about-light);
+  padding: 40px 30px;
+  transition: box-shadow 0.3s;
+}
+
+.about_me-container:hover {
+  box-shadow: 0 16px 40px rgba(162,89,230,0.22);
 }
 
 .about_me-one {
-    width: 40%;
-    display: flex;
-    align-items: center;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about_me-img {
-    width: 400px;
+  width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px var(--about-accent);
+  transition: transform 0.5s;
+}
+
+.about_me-img:hover {
+  transform: scale(1.08) rotate(-2deg);
 }
 
 .about_me-two {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .about_me-title {
-    font-family: var(--rubik);
-    font-size: 40px;
-    color: var(--black);
-    font-weight: 700;
-    margin-bottom: 30px;
+  font-family: var(--rubik);
+  font-size: 40px;
+  color: var(--about-accent);
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(162,89,230,0.18);
 }
 
 .about_me-paragraph {
-    line-height: 25px;
-    text-align: left;
+  line-height: 1.7;
+  text-align: left;
+  color: var(--about-light);
+  font-size: 18px;
+}
+
+@media (max-width: 700px) {
+  .about_me-container {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  .about_me-one, .about_me-two {
+    width: 100%;
+  }
+  .about_me-img {
+    width: 180px;
+  }
+  .about_me-title {
+    font-size: 28px;
+  }
+  .about_me-paragraph {
+    font-size: 15px;
+  }
 }

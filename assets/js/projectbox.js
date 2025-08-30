@@ -9,3 +9,14 @@ document.getElementById('languageSelector').addEventListener('change', function(
         }
     });
 });
+
+// Animación de borde en .portfolio al hacer scroll
+window.addEventListener('scroll', function() {
+  var portfolio = document.querySelector('.portfolio');
+  if (!portfolio) return;
+  if (window.scrollY > 50) {
+    portfolio.classList.add('scrolled');
+  } else {
+    portfolio.classList.remove('scrolled');
+  }
+});

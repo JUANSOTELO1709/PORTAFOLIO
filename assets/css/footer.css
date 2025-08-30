@@ -1,22 +1,40 @@
+:root {
+  --footer-dark: #2a1746;
+  --footer-accent: #a259e6;
+  --footer-light: #fff;
+}
+
 footer{
 display: flex;
 align-items: center;
 justify-content: center;
 padding: 35px;
 font-weight: 400;
+background: var(--footer-dark);
+color: var(--footer-light);
+border-radius: 12px 12px 0 0;
+box-shadow: 0 4px 16px rgba(162,89,230,0.12);
 }
 
 footer i{
-    color: var(--indigo);
+    color: var(--footer-accent);
     font-weight: 900;
 }
 
 footer a{
     font-weight: 500;
     text-decoration: none;
-    color: var(--dark);
+    color: var(--footer-light);
+    transition: color 0.3s;
 }
 
 footer a:hover{
-    color: var(--indigo);
+    color: var(--footer-accent);
+}
+
+@media (max-width: 700px) {
+  footer {
+    padding: 18px;
+    font-size: 14px;
+  }
 }

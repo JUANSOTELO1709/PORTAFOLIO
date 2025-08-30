@@ -1,19 +1,19 @@
+:root {
+  --anim-dark: #2a1746;
+  --anim-accent: #a259e6;
+}
+
 /* Animaciones personalizadas */
 .animate__animated {
     opacity: 0;
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.animate__fadeInLeft.scroll-in {
-    opacity: 1;
-    transform: translateX(0);
-    animation-delay: 2s;
-}
-
+.animate__fadeInLeft.scroll-in,
 .animate__fadeInRight.scroll-in {
     opacity: 1;
     transform: translateX(0);
-    animation-delay: 2s;
+    animation-delay: 0.5s;
 }
 
 /* Posicionamiento inicial de las animaciones */
@@ -45,6 +45,7 @@
 
 .about_me-img.zoomed {
     transform: scale(1.1);
+    box-shadow: 0 8px 32px var(--anim-accent);
 }
 
 
@@ -92,6 +93,12 @@
 .card.in-view {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 700px) {
+  .about_me-img.zoomed {
+    box-shadow: 0 4px 12px var(--anim-accent);
+  }
 }
 
 

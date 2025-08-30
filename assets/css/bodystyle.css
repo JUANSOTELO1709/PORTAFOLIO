@@ -5,11 +5,12 @@
     --light: #f8f9fa;
     --gray: #6c757d;
     --indigo: #6610f2;
-    --purple: #6f42c1;
+    --purple: #a259e6;
     --dark: #1A202C;
     --ligth_purple: #f3f3ff;
     --lila: #eeeefc;
     --black: #21232E;
+    --body-bg: #24123a;
 }
 
 html{
@@ -19,10 +20,11 @@ html{
 body{
     font-size: 16px;
     font-family: var(--roboto);
-    color: var(--dark);
+    color: var(--white);
     font-weight: 400;
-    background: url(/assets/images/fondoss.jpg) repeat;
-    background-color: var(--white);
+    background: var(--body-bg);
+    background-image: url(/assets/images/fondoss.jpg);
+    background-repeat: repeat;
     transition: all 0.3s ease;
 }
 
@@ -32,7 +34,7 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: white;
+    background-color: var(--body-bg);
 }
 
 #content {
@@ -57,4 +59,10 @@ body{
 }
 .spanish { 
     display: block; 
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
 }

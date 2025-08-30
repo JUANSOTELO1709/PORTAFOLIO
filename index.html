@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 
-    <!-- Styles -->
-     <link rel="stylesheet" href="motion.css">
+    <!-- Styles: ordenados para mejor cascada y coherencia -->
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/animaciondiv.css">
     <link rel="stylesheet" href="assets/css/bodystyle.css">
+    <link rel="stylesheet" href="assets/css/scrollstyle.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
     <link rel="stylesheet" href="assets/css/sections.css">
     <link rel="stylesheet" href="assets/css/principal.css">
     <link rel="stylesheet" href="assets/css/about_me.css">
@@ -19,10 +19,10 @@
     <link rel="stylesheet" href="assets/css/projects.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/scrollstyle.css">
-    <link rel="stylesheet" href="assets/css/darkmode.css">
     <link rel="stylesheet" href="assets/css/Proyectbox.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animaciondiv.css">
+    <link rel="stylesheet" href="motion.css">
 
 
     <!-- Fonts -->
@@ -52,9 +52,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
     <body>
-        <main>
+    <main role="main">
             <header id="header">
-                <div class="container_header">
+                <div class="container_header" role="banner">
                     <!-- Encabezado en Español -->
                     <div class="header_left">
                         <span class="header_title">Portfolio</span>
@@ -63,21 +63,15 @@
                     
                     <!-- Menú de Navegación en Español -->
                     <nav class="items_container">
-                        <a class="menuItems" href="#about_me">SOBRE MI</a>
-                        <a class="menuItems" href="#skills">HABILIDADES</a>
-                        <a class="menuItems" href="#studies">FORMACIÓN</a>
-                        <a class="menuItems" href="#projects">PROYECTOS</a>
-                        <a class="menuItems" href="#contact">CONTACTO</a> 
+                        <a class="menuItems" href="#about_me" aria-label="Sobre mí">SOBRE MI</a>
+                        <a class="menuItems" href="#skills" aria-label="Habilidades">HABILIDADES</a>
+                        <a class="menuItems" href="#studies" aria-label="Formación">FORMACIÓN</a>
+                        <a class="menuItems" href="#projects" aria-label="Proyectos">PROYECTOS</a>
+                        <a class="menuItems" href="#contact" aria-label="Contacto">CONTACTO</a> 
                     </nav>
             
                     <!-- Botón de Cambio de Idioma -->
                     <button id="toggle-lang-about_me" class="lang_button">ESP</button>
-                    
-                    <!-- Botón de Modo Oscuro/Claro -->
-                    <div class="dark_mode_button">
-                        <i class="fa-solid fa-moon"></i>
-                        <i class="fa-solid fa-sun"></i>
-                    </div>
             
                     <!-- Menú Burger -->
                     <div class="nav_burguer">
@@ -232,6 +226,7 @@
                     <h1>Oracle Next Education</h1>
                     <p>Front-end, Back-end y Soft Skills</p>
                 </div>
+                <button class="cert_button" data-cert="assets/images/certificado_java.png">Ver Certificado</button>
             </div>
             <div class="card">
                 <img src="assets/images/platzi.jpg" alt="Logo Platzi">
@@ -239,20 +234,23 @@
                     <h1>Platzi</h1>
                     <p>CURSO I.O.T<br>protocolos de comunicación</p>
                 </div>
+                <button class="cert_button" data-cert="assets/images/certificado2.jpg">Ver Certificado</button>
             </div>
 
-            <div class="card"> <img src="assets/images/Universidad.jpg" alt "logo Uni"> 
+            <div class="card"> <img src="assets/images/Universidad.jpg" alt="logo Uni"> 
                 <div class="cards_text">
                     <center> <h1>E.T.I.T.C</h1>
                     <p>Tecnico profesional en electrónica </p>
                     </div>
-                </div>
+                <button class="cert_button" data-cert="assets/images/certificado3.jpg">Ver Certificado</button>
+            </div>
 
-            <div class="card"> <img src="assets/images/Universidad.jpg" alt "logo Uni"> 
+            <div class="card"> <img src="assets/images/Universidad.jpg" alt="logo Uni"> 
                 <div class="cards_text">
                     <center> <h1>E.T.I.T.C</h1>
                     <p>Tecnología en Automatizacion </p>
                     </div>
+                <button class="cert_button" data-cert="assets/images/certificado4.jpg">Ver Certificado</button>
              </div>
             </div>
 
@@ -270,6 +268,7 @@
                     <h1>Oracle Next Education</h1>
                     <p>Front-end, Back-end, and Soft Skills</p>
                 </div>
+                <button class="cert_button" data-cert="assets/images/certificado_java.png">View Certificate</button>
             </div>
             <div class="card">
                 <img src="assets/images/platzi.jpg" alt="Logo Platzi">
@@ -277,23 +276,29 @@
                     <h1>Platzi</h1>
                     <p>I.O.T Course <br>communication protocols</p>
                 </div>
+                <button class="cert_button" data-cert="assets/images/cert_platzi.png">View Certificate</button>
             </div>
-
-            <div class="card"> <img src="assets/images/Universidad.jpg" alt "logo Uni"> 
+            <div class="card">
+                <img src="assets/images/Universidad.jpg" alt="logo Uni"> 
                 <div class="cards_text">
-                    <center> <h1>E.T.I.T.C</h1>
+                    <h1>E.T.I.T.C</h1>
                     <p>Technician professional in Electronics</p>
-                    </div>
                 </div>
-                
-            <div class="card"> 
-                <img src="assets/images/Universidad.jpg" alt "logo Uni"> 
-                    <div class="cards_text">
-                        <center> <h1>E.T.I.T.C</h1>
-                    <p>Technology in Automation</p>
-                    </div>
+                <button class="cert_button" data-cert="assets/images/cert_etitc_elec.png">View Certificate</button>
             </div>
-        </div>  
+            <div class="card"> 
+                <img src="assets/images/Universidad.jpg" alt="logo Uni"> 
+                <div class="cards_text">
+                    <h1>E.T.I.T.C</h1>
+                    <p>Technology in Automation</p>
+                </div>
+                <button class="cert_button" data-cert="assets/images/cert_etitc_auto.png">View Certificate</button>
+            </div>
+        </div>
+        <!-- Modal for certificates -->
+        <div id="certModal">
+            <button id="closeCertModal">&times;</button>
+            <img id="certModalImg" src="" alt="Certificate" />
         </div>
     </div>
 
@@ -322,100 +327,92 @@
 
                             <section class="projects" id="projects">                         <!-- Seccion JAVA -->
 
-                                <div class="container_projects">
+<div class="container_projects">
+    <div class="project_card">
+        <div class="container_title">
+            <h1>Conversor de Moneda</h1>
+        </div>
+        <img class="project_card_img" src="assets/images/java.png" alt="Imagen Proyecto Conversor Moneda">
+        <div class="container_buttons">
+            <a href="https://github.com/JUANSOTELO1709/ConversorMoneda/tree/main" target="_blank" class="buttons"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+        <div class="container_description">
+            <p>Conversor de divisas y temperatura utilizando el lenguaje Java.</p>
+        </div>
+        <div class="project_info">
+            <p><strong>Fecha:</strong> Febrero 2024</p>
+            <p><strong>Rol:</strong> Desarrollador Full Stack</p>
+            <p><strong>Tecnologías:</strong> Java, Swing, API ExchangeRate</p>
+        </div>
+        <div class="container_tecnologies">
+            <ul>
+                <li><img src="assets/images/JAVA-LOGO.png" alt="Java Logo"></li>
+                <li><img src="assets/images/logo-html-black.png" alt="HTML Logo"></li>
+                <li><img src="assets/images/logo-css-black.png" alt="CSS Logo"></li>
+                <li><img src="assets/images/logo-js-black.png" alt="JS Logo"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="project_card">
+        <div class="container_title">
+            <h1>Task Management Application (Spring Boot)</h1>
+        </div>
+        <img class="project_card_img" src="assets/images/img1.png" alt="Imagen proyecto TaskManagament">
+        <div class="container_buttons">
+            <a href="https://github.com/JUANSOTELO1709/TaskManagement?tab=readme-ov-file" target="_blank" class="buttons"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+        <div class="container_description">
+            <p>Aplicación para agregar, visualizar y gestionar tareas. Incluye interfaz gráfica en Java (Swing) y aplicación web con Spring Boot y Thymeleaf.</p>
+        </div>
+        <div class="project_info">
+            <p><strong>Fecha:</strong> Marzo 2024</p>
+            <p><strong>Rol:</strong> Desarrollador Backend</p>
+            <p><strong>Tecnologías:</strong> Java, Spring Boot, Thymeleaf, SQL</p>
+        </div>
+        <div class="container_tecnologies">
+            <ul>
+                <li><img src="assets/images/sql.png" alt="SQL Logo"></li>
+                <li><img src="assets/images/logo-java.png" alt="Java Logo"></li>
+                <li><img src="assets/images/logo-js-black.png" alt="JS Logo"></li>
+                <li><img src="assets/images/logo-html-black.png" alt="HTML Logo"></li>
+                <li><img src="assets/images/logo-css-black.png" alt="CSS Logo"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="project_card">
+        <div class="container_title">
+            <h1>Conversor divisa</h1>
+        </div>
+        <img class="project_card_img" src="assets/images/conversor de monedas.png" alt="Imagen proyecto Conversor Moneda">
+        <div class="container_buttons">
+            <a href="https://github.com/JUANSOTELO1709/TaskManagement?tab=readme-ov-file" target="_blank" class="buttons"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+        <div class="container_description">
+            <p>Aplicación de escritorio para convertir monedas usando Java Swing y ExchangeRate-API.</p>
+        </div>
+        <div class="project_info">
+            <p><strong>Fecha:</strong> Abril 2023</p>
+            <p><strong>Rol:</strong> Desarrollador Desktop</p>
+            <p><strong>Tecnologías:</strong> Java, Swing, API ExchangeRate</p>
+        </div>
+        <div class="container_tecnologies">
+            <ul>
+                <li><img src="assets/images/logo-java.png" alt="Java Logo"></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-                                <div class="project_card">   <!-- Conversor de monedas  -->
 
-
-
-                                    <div class="container_title">
-                                        <h1>Conversor de Moneda</h1>
-                                    </div>
-                                    <img class="project_card_img" src="assets/images/java.png" alt="Imagen Proyecto Conversor Moneda"  width="50" height="200">
-                                    <div class="container_buttons">
-                                        <a href="https://github.com/JUANSOTELO1709/ConversorMoneda/tree/main" target="_blank" class="buttons"><i class="fa-brands fa-github"></i> GitHub</a>
-                                    </div>
-            
-                                     <div class="container_description">
-                                        <p>Conversor de divisas y temperatura utilizando el lenguaje Java.</p>
-                                    </div>
-            
-                                    <div class="container_tecnologies">
-                                        <ul>
-                                            <li><img src="assets/images/JAVA-LOGO.png" alt="JS Logo"></li>
-                                            <li><img src="assets/images/logo-html-black.png" alt="HTML Logo"></li>
-                                            <li><img src="assets/images/logo-css-black.png" alt="CSS Logo"></li>
-                                            <li><img src="assets/images/logo-js-black.png" alt="JS Logo"></li>
-                                        </ul>
-                                    </div>
-            
-            
-            
-                                
-                                </div>
-
-                                <div class="project_card">  <!-- TasK  -->
-                                    <div class="container_title">
-                                        <h1>Task Management Application (springboot)</h1>
-                                    </div>
-                                    <img class="project_card_img" src="assets/images/img1.png" alt="Imagen proyecto TaskManagament">
-                                    <div class="container_buttons">
-                                        <a href="https://github.com/JUANSOTELO1709/TaskManagement?tab=readme-ov-file" target="_blank" class="buttons"><i class="fa-github"></i> GitHub</a>
-                                    </div>
-            
-                                     <div class="container_description">
-                                        <p>La aplicación de gestión de tareas es una herramienta versátil que permite a los usuarios agregar, visualizar y gestionar tareas. 
-                                            Esta aplicación incluye una interfaz gráfica de escritorio en Java (Swing) 
-                                            y una aplicación web basada en Spring Boot con Thymeleaf.</p>
-                                    </div>
-        
-        
-                             
-                                    
-                                    
-            
-                                    <div class="container_tecnologies">
-                                        <ul>
-                                            <li><img src="assets/images/sql.png" alt="HTML Logo"></li>
-                                            <li><img src="assets/images/logo-java.png" alt="CSS Logo"></li>
-                                            <li><img src="assets/images/logo-js-black.png" alt="JS Logo"></li>
-                                            <li><img src="assets/images/logo-html-black.png" alt="JS Logo"></li>
-                                            <li><img src="assets/images/logo-css-black.png" alt="JS Logo"></li>
-    
-    
-                                        </ul>
-                                    </div>
-                                    </div>
-    
-                                <div class="project_card">      <!-- Divisas API  -->
-                                    <div class="container_title">
-                                        <h1>Conversor divisa </h1>
-                                    </div>
-                                    <img class="project_card_img" src="assets/images/conversor de monedas.png" alt="Imagen proyecto TaskManagament">
-                                    <div class="container_buttons">
-                                        <a href="https://github.com/JUANSOTELO1709/TaskManagement?tab=readme-ov-file" target="_blank" class="buttons"><i class="fa-github"></i> GitHub</a>
-                                    </div>
-            
-                                     <div class="container_description">
-                                        <p>Este proyecto es una aplicación de escritorio simple para convertir diferentes monedas utilizando Java Swing 
-                                            para la interfaz gráfica de usuario. La aplicación permite seleccionar monedas y se actualiza mediante  ExchangeRate-API</p>
-                                    </div>
-        
-        
-                             
-                                    
-                                    
-            
-                                    <div class="container_tecnologies">
-                                        <ul>
-                                            <li><img src="assets/images/logo-java.png" alt="HTML Logo"></li>
-            
-                                        </ul>
-                                    </div>
-                                    </div>
-                                    </div>
                             </section>
                         </div>
+
+
+
+
+
+
+
 
                         <div class="project" id="c">
                             <h2>Proyecto en Python</h2>
@@ -639,6 +636,9 @@
 
             </section>
         
+
+
+
             <section class="contact" id="contact">      <!-- Contacto -->  
                 <div class="contact_title">
                     <h1>Contacto</h1>
@@ -702,7 +702,7 @@
         </main>
 
         <footer>
-        <p> Developed with <i class="fa-regular fa-heart"></i> by <a href="" target="_blank">Juan Sotelo</a></p>
+    <p>Desarrollado con <i class="fa-regular fa-heart"></i> por <a href="https://www.linkedin.com/in/juan-david-sotelo-rozo-4b4a1222b/" target="_blank">Juan Sotelo</a></p>
         </footer>
 
         <script src="assets/js/carga.js"></script>
@@ -737,6 +737,13 @@
             </script>
             
         </script>
-</body>
+
+        <!-- Modal para mostrar certificado -->
+<div id="certModal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(30,20,50,0.95);z-index:9999;justify-content:center;align-items:center;">
+  <button id="closeCertModal" style="position:absolute;top:32px;right:32px;font-size:2rem;background:#a259e6;color:#fff;border:none;border-radius:50%;width:48px;height:48px;cursor:pointer;z-index:10001;">&times;</button>
+  <img id="certModalImg" src="" alt="Certificado" style="max-width:90vw;max-height:80vh;border-radius:18px;box-shadow:0 8px 32px #a259e6;">
+</div>
+
+    </body>
 
 </html>

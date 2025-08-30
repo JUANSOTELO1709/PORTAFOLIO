@@ -1,3 +1,10 @@
+:root {
+  --studies-dark: #3a185b;
+  --studies-accent: #a259e6;
+  --studies-light: #fff;
+  --studies-card-bg: #24123a;
+}
+
 /* Clases para controlar la visibilidad */
 .english { 
     display: none; 
@@ -10,10 +17,12 @@
 .studies_title {
     font-family: var(--rubik);
     font-size: 40px;
-    color: var(--black);
+    color: var(--studies-accent);
     font-weight: 700;
     margin-bottom: 50px;
     text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(162,89,230,0.18);
 }
 
 .studies_cards {
@@ -24,7 +33,7 @@
     margin-top: 20px;
     width: 100%;
     flex-wrap: wrap;
-    gap: 90px;
+    gap: 70px;
 }
 
 .card {
@@ -32,24 +41,27 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 200px;
-    height: 300px;
-    padding: 10px;
-    border: transparent;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 220px;
+    height: 320px;
+    padding: 18px;
+    border: 2px solid var(--studies-accent);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(162,89,230,0.18);
     transition: all 0.3s ease 0s;
-    background-color: var(--lila);
+    background-color: var(--studies-card-bg);
+    color: var(--studies-light);
 }
 
 .card:hover {
-    background-color: var(--light);
-    box-shadow: 0px 15px 30px rgb(77 87 222 / 30%);
+    background: linear-gradient(135deg, var(--studies-accent), var(--studies-dark));
+    box-shadow: 0px 15px 30px rgb(162 89 230 / 30%);
+    transform: scale(1.05) rotate(-2deg);
 }
 
 .card img {
     width: 100px;
-    margin: 50px 0;
+    margin: 40px 0;
+    filter: drop-shadow(0 4px 12px var(--studies-accent));
 }
 
 .cards_text {
@@ -63,7 +75,7 @@
     margin-bottom: 20px;
     font-weight: 500;
     font-size: 17px;
-    color: var(--black);
+    color: var(--studies-accent);
 }
 
 .card p {
@@ -71,5 +83,93 @@
     font-weight: 400;
     text-align: center;
     font-size: 15px;
+}
+
+.cert_button {
+  display: block;
+  margin: 18px auto 0 auto;
+  padding: 12px 32px;
+  background: #a259e6;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(162,89,230,0.18);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.cert_button:hover {
+  background: #fff;
+  color: #a259e6;
+}
+@media (max-width: 700px) {
+  .studies_title {
+    font-size: 28px;
+  }
+  .studies_cards {
+    gap: 30px;
+  }
+  .card {
+    width: 140px;
+    height: 200px;
+    padding: 8px;
+  }
+  .card img {
+    width: 60px;
+    margin: 20px 0;
+  }
+  .cert_button {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+}
+#certModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30,20,50,0.95);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+#certModal.active {
+  display: flex;
+}
+#certModalImg {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px #a259e6;
+}
+#closeCertModal {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  font-size: 2rem;
+  background: #a259e6;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  z-index: 10001;
+}
+@media (max-width: 700px) {
+  #closeCertModal {
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    font-size: 1.5rem;
+  }
+  #certModalImg {
+    max-width: 98vw;
+    max-height: 60vh;
+  }
 }
 

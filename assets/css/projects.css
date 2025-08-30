@@ -1,11 +1,18 @@
+:root {
+  --projects-dark: #24123a;
+  --projects-accent: #a259e6;
+  --projects-light: #fff;
+}
 
 .projects_title{
     font-family: var(--rubik);
     font-size: 40px;
-    color: var(--black);
+    color: var(--projects-accent);
     font-weight: 700;
     margin-bottom: 50px;
     text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(162,89,230,0.18);
 }
 
 .container_projects{
@@ -16,7 +23,7 @@
     margin-top: 20px;
     width: 100%;
     flex-wrap: wrap;
-    gap: 90px;
+    gap: 70px;
 }
 
 .project_card{
@@ -28,29 +35,44 @@
     flex-direction: column;
     width: 430px;
     height: 450px;
-    background-color: var(--lila);
+    background-color: var(--projects-dark);
     border-radius: 20px;
-    box-shadow: rgb(160 174 192 / 60%) 0px 4px 6px;
+    box-shadow: 0 8px 32px rgba(162,89,230,0.12);
+    color: var(--projects-light);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.project_card:hover {
+  box-shadow: 0 16px 40px rgba(162,89,230,0.22);
+  transform: scale(1.03) rotate(-2deg);
 }
 
 .container_title{
-    background-color: var(--ligth_purple);
+    background-color: var(--projects-accent);
     margin-bottom: 15px;
     width: 100%;
     padding: 20px 0;
     text-align: center;
+    color: var(--projects-light);
+    border-radius: 12px 12px 0 0;
 }
 
 .container_title h1{
     font-size: 25px;
     font-weight: 600;
-    color: var(--black);
+    color: var(--projects-light);
 }
 
 .project_card_img{
     width: 400px;
     transition: all 0.3s ease;
     transform: scale(1);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px var(--projects-accent);
+}
+
+.project_card_img:hover {
+  transform: scale(1.08) rotate(-2deg);
 }
 
 .container_buttons{
@@ -58,7 +80,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
 }
 
 .buttons{
@@ -130,6 +151,27 @@
 
 .project_card:hover .container_tecnologies{
     left: 0;
+}
+
+@media (max-width: 700px) {
+  .projects_title {
+    font-size: 28px;
+  }
+  .container_projects {
+    gap: 30px;
+  }
+  .project_card {
+    width: 220px;
+    height: 240px;
+    padding: 8px;
+  }
+  .project_card_img {
+    width: 120px;
+  }
+  .container_title {
+    padding: 10px 0;
+    font-size: 16px;
+  }
 }
 
 

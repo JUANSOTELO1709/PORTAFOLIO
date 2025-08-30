@@ -1,8 +1,31 @@
+:root {
+  --motion-accent: #a259e6;
+}
 
 .principal_one_titles {
-    text-align: center;
+  text-align: center;
+  color: var(--motion-accent);
+  font-family: var(--rubik);
+  font-size: 2.2em;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(162, 89, 230, 0.18);
 }
 
 .title_one {
-    font-size: 2em;
+  font-size: 2em;
+  color: var(--motion-accent);
+  font-family: var(--rubik);
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 8px rgba(162, 89, 230, 0.18);
+}
+
+@media (max-width: 700px) {
+  .principal_one_titles {
+    font-size: 1.3em;
+  }
+
+  .title_one {
+    font-size: 1.1em;
+  }
 }

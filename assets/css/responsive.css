@@ -20,14 +20,18 @@ color: #a259e6;
 
 @media screen and (max-width: 980px) {
 body {
-background: url(/assets/images/bg-body.png) no-repeat center, #24123a;
-color: #fff;
+background: var(--body-bg) !important;
+background-image: url(/assets/images/fondoss.jpg) !important;
+background-repeat: repeat !important;
+color: #fff !important;
 }
 
 header {
 height: 70px;
-background-color: #24123a;
-color: #fff;
+background-color: var(--principal-dark) !important;
+color: #fff !important;
+box-shadow: 0 4px 16px rgba(162,89,230,0.18);
+border-radius: 0 0 18px 18px;
 }
 
 .logo_header {

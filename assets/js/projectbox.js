@@ -20,3 +20,16 @@ window.addEventListener('scroll', function() {
     portfolio.classList.remove('scrolled');
   }
 });
+
+window.addEventListener('DOMContentLoaded', function() {
+    var projects = document.querySelectorAll('.project');
+    var defaultProject = document.getElementById('java');
+    projects.forEach(function(project) {
+        project.classList.remove('active');
+    });
+    if (defaultProject) {
+        defaultProject.classList.add('active');
+    }
+    var selector = document.getElementById('languageSelector');
+    if (selector) selector.value = 'java';
+});

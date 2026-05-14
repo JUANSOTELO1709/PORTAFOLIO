@@ -33,18 +33,11 @@ window.addEventListener("scroll", ()=>{
     }
 })
 
-// Descargar HV al hacer click en el botón
+// Abrir CV al hacer click en el botón
 const downloadButtons = document.querySelectorAll('.download_button');
 downloadButtons.forEach(btn => {
   btn.addEventListener('click', function() {
-    let isEnglish = btn.closest('.principal_one').parentElement.id === 'english-principal';
-    let fileName = isEnglish ? 'HVENGL.pdf' : 'HV.pdf';
-    let link = document.createElement('a');
-    link.href = fileName;
-    link.download = fileName;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open('cv.html', '_blank');
   });
 });
 

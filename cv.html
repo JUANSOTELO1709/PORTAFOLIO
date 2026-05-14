@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juan David Sotelo Rozo — Ingeniero Mecatrónico</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 14px;
+      color: #1a1a2e;
+      background: #f5f7fa;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 860px;
+      margin: 40px auto;
+      background: #ffffff;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+      color: #fff;
+      padding: 40px 48px 32px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    header h2 {
+      font-size: 15px;
+      font-weight: 400;
+      color: #a8d8ea;
+      margin-top: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .contact-row a, .contact-row span {
+      color: #a8d8ea;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .contact-row a:hover { color: #fff; }
+
+    .tag {
+      display: inline-block;
+      background: rgba(168,216,234,0.15);
+      border: 1px solid rgba(168,216,234,0.35);
+      border-radius: 20px;
+      padding: 2px 12px;
+      font-size: 12px;
+      color: #a8d8ea;
+    }
+
+    /* BODY */
+    .body {
+      padding: 36px 48px;
+    }
+
+    /* SECTION */
+    section {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #0f3460;
+      border-bottom: 2px solid #0f3460;
+      padding-bottom: 6px;
+      margin-bottom: 18px;
+    }
+
+    /* PERFIL */
+    .perfil p {
+      color: #444;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* EXPERIENCIA */
+    .job {
+      margin-bottom: 22px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .job-title {
+      font-weight: 700;
+      font-size: 15px;
+      color: #0f3460;
+    }
+
+    .job-company {
+      font-weight: 600;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .job-date {
+      font-size: 12px;
+      color: #888;
+      white-space: nowrap;
+    }
+
+    .job ul {
+      margin-top: 8px;
+      padding-left: 18px;
+      color: #444;
+    }
+
+    .job ul li {
+      margin-bottom: 4px;
+    }
+
+    /* EDUCACION */
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 10px;
+    }
+
+    .edu-title {
+      font-weight: 600;
+      color: #0f3460;
+      font-size: 14px;
+    }
+
+    .edu-inst {
+      color: #555;
+      font-size: 13px;
+    }
+
+    .edu-date {
+      font-size: 12px;
+      color: #888;
+      white-space: nowrap;
+    }
+
+    /* HABILIDADES */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-group h4 {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #0f3460;
+      margin-bottom: 8px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .skill-tag {
+      background: #eaf2fb;
+      color: #0f3460;
+      border-radius: 14px;
+      padding: 3px 11px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    /* IDIOMAS */
+    .lang-row {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .lang-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .lang-name {
+      font-weight: 600;
+      font-size: 14px;
+      color: #0f3460;
+    }
+
+    .lang-level {
+      font-size: 12px;
+      color: #777;
+    }
+
+    /* LINKS */
+    .links-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .links-row a {
+      color: #0f3460;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid #a8d8ea;
+      padding-bottom: 1px;
+    }
+
+    .links-row a:hover { color: #1a6fb5; }
+
+    @media print {
+      body { background: #fff; }
+      .page { box-shadow: none; margin: 0; border-radius: 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header>
+    <h1>Juan David Sotelo Rozo</h1>
+    <h2>Ingeniero Mecatrónico &nbsp;|&nbsp; Automatización &amp; Control Industrial &nbsp;|&nbsp; Sistemas Embebidos</h2>
+
+    <div class="contact-row">
+      <span>📍 Bogotá, Colombia</span>
+      <a href="tel:+573026622715">+57 302 662 2715</a>
+      <a href="mailto:juan.david.jds84@gmail.com">juan.david.jds84@gmail.com</a>
+      <a href="https://www.linkedin.com/in/juan-david-sotelo-rozo-4b4a1222b" target="_blank">LinkedIn</a>
+      <a href="https://juansotelo1709.github.io/PORTAFOLIO/" target="_blank">Portafolio</a>
+      <a href="https://github.com/juansotelo1709" target="_blank">GitHub</a>
+    </div>
+
+    <div class="contact-row" style="margin-top:14px;">
+      <span class="tag">Industria 4.0</span>
+      <span class="tag">IoT Industrial</span>
+      <span class="tag">PLC / HMI / SCADA</span>
+      <span class="tag">Sistemas Embebidos</span>
+      <span class="tag">Power BI</span>
+    </div>
+  </header>
+
+  <div class="body">
+
+    <!-- PERFIL -->
+    <section class="perfil">
+      <div class="section-title">Perfil Profesional</div>
+      <p>
+        Ingeniero Mecatrónico con formación técnica y tecnológica en electrónica y automatización industrial,
+        y más de 2 años de experiencia en entornos industriales reales. Especializado en programación de PLC,
+        desarrollo de sistemas embebidos, integración hardware-software e implementación de soluciones bajo el
+        paradigma de Industria 4.0. Con capacidad para diagnosticar fallas, optimizar procesos productivos
+        y desarrollar dashboards analíticos con Power BI. Orientado a resultados, trabajo colaborativo y
+        mejora continua de procesos tecnológicos.
+      </p>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section>
+      <div class="section-title">Experiencia Profesional</div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Técnico Electrónico</span>
+            &nbsp;—&nbsp;
+            <span class="job-company">ANDISEG LTDA</span>
+          </div>
+          <span class="job-date">2025 · Bogotá, Colombia</span>
+        </div>
+        <ul>
+          <li>Instalación, configuración y mantenimiento de sistemas de alarmas de intrusión y detección de incendios, garantizando disponibilidad superior al 95%.</li>
+          <li>Implementación y soporte de sistemas CCTV con integración a plataformas de monitoreo remoto.</li>
+          <li>Configuración de sistemas de control de acceso biométrico y por tarjeta RFID.</li>
+          <li>Diagnóstico y reparación de tarjetas electrónicas, reduciendo tiempos de inactividad de equipos.</li>
+          <li>Mantenimiento preventivo y correctivo de sistemas de seguridad electrónica en instalaciones comerciales e industriales.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Técnico de Mantenimiento Industrial</span>
+            &nbsp;—&nbsp;
+            <span class="job-company">INTECPLAST SAS</span>
+          </div>
+          <span class="job-date">2023 – 2024 · Bogotá, Colombia</span>
+        </div>
+        <ul>
+          <li>Programación y ajuste de PLC (Siemens / Allen-Bradley) para automatización de líneas de producción plástica.</li>
+          <li>Reducción de tiempos de parada no planificada mediante plan de mantenimiento preventivo estructurado.</li>
+          <li>Diagnóstico y solución de fallas en sistemas eléctricos y electrónicos de maquinaria industrial.</li>
+          <li>Mantenimiento de motores eléctricos trifásicos, variadores de frecuencia y tableros de control.</li>
+          <li>Apoyo en la optimización de procesos productivos con impacto directo en indicadores de eficiencia (OEE).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section>
+      <div class="section-title">Habilidades Técnicas</div>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4>Automatización Industrial</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">PLC (Siemens / AB)</span>
+            <span class="skill-tag">HMI</span>
+            <span class="skill-tag">SCADA</span>
+            <span class="skill-tag">Sensores &amp; Actuadores</span>
+            <span class="skill-tag">Variadores de frecuencia</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Sistemas Embebidos &amp; IoT</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">ESP32 / ESP8266</span>
+            <span class="skill-tag">Protocolos MQTT</span>
+            <span class="skill-tag">C / C++</span>
+            <span class="skill-tag">Electrónica digital</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Diseño &amp; Simulación</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">SolidWorks</span>
+            <span class="skill-tag">AutoCAD</span>
+            <span class="skill-tag">Impresión 3D</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Datos &amp; Software</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Python (básico)</span>
+            <span class="skill-tag">Excel avanzado</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Seguridad Electrónica</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">CCTV</span>
+            <span class="skill-tag">Control de acceso</span>
+            <span class="skill-tag">Sistemas contra incendio</span>
+            <span class="skill-tag">RFID</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Mantenimiento</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Mantenimiento preventivo</span>
+            <span class="skill-tag">Mantenimiento correctivo</span>
+            <span class="skill-tag">Diagnóstico de fallas</span>
+            <span class="skill-tag">OEE</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCACION -->
+    <section>
+      <div class="section-title">Formación Académica</div>
+
+      <div class="edu-item">
+        <div>
+          <div class="edu-title">Ingeniería Mecatrónica</div>
+          <div class="edu-inst">Escuela Tecnológica Instituto Técnico Central</div>
+        </div>
+        <span class="edu-date">2020 – 2026</span>
+      </div>
+
+      <div class="edu-item">
+        <div>
+          <div class="edu-title">Tecnólogo en Automatización Industrial</div>
+          <div class="edu-inst">Escuela Tecnológica Instituto Técnico Central</div>
+        </div>
+        <span class="edu-date">2024 – 2025</span>
+      </div>
+
+      <div class="edu-item">
+        <div>
+          <div class="edu-title">Técnico Profesional en Electrónica</div>
+          <div class="edu-inst">Escuela Tecnológica Instituto Técnico Central</div>
+        </div>
+        <span class="edu-date">2020 – 2023</span>
+      </div>
+    </section>
+
+    <!-- IDIOMAS -->
+    <section>
+      <div class="section-title">Idiomas</div>
+      <div class="lang-row">
+        <div class="lang-item">
+          <span class="lang-name">Español</span>
+          <span class="lang-level">Nativo</span>
+        </div>
+        <div class="lang-item">
+          <span class="lang-name">Inglés</span>
+          <span class="lang-level">Intermedio — B1</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section>
+      <div class="section-title">Portafolio &amp; Perfiles</div>
+      <div class="links-row">
+        <a href="https://juansotelo1709.github.io/PORTAFOLIO/" target="_blank">juansotelo1709.github.io/PORTAFOLIO</a>
+        <a href="https://github.com/juansotelo1709" target="_blank">github.com/juansotelo1709</a>
+        <a href="https://www.linkedin.com/in/juan-david-sotelo-rozo-4b4a1222b" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+  </div>
+</div>
+</body>
+</html>
